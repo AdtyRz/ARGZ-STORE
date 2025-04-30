@@ -13,37 +13,173 @@
     </header>
     <main>
         <input type="text" id="searchInput" placeholder="Cari produk..." onkeyup="cariProduk()" style="width: 100%; padding: 10px; margin-bottom: 20px; font-size: 1em; border-radius: 4px; border: 1px solid #ccc;" />
-        <section class="product-list" id="productList">
-            <article class="product">
-                <img src="https://via.placeholder.com/150" alt="Produk 1" />
-                <h2>Produk 1</h2>
-                <p class="price">Rp 100.000</p>
-                <button class="buy-button" onclick="bukaModalProduk('Produk 1', 'Deskripsi lengkap produk 1, termasuk spesifikasi dan keunggulan.')">Beli</button>
-            </article>
-            <article class="product">
-                <img src="https://via.placeholder.com/150" alt="Produk 2" />
-                <h2>Produk 2</h2>
-                <p class="price">Rp 200.000</p>
-                <button class="buy-button" onclick="bukaModalProduk('Produk 2', 'Deskripsi lengkap produk 2, termasuk spesifikasi dan keunggulan.')">Beli</button>
-            </article>
-            <article class="product">
-                <img src="https://via.placeholder.com/150" alt="Produk 3" />
-                <h2>Produk 3</h2>
-                <p class="price">Rp 300.000</p>
-                <button class="buy-button" onclick="bukaModalProduk('Produk 3', 'Deskripsi lengkap produk 3, termasuk spesifikasi dan keunggulan.')">Beli</button>
-            </article>
+        
+        <section class="product-group">
+            <h2>VPS DIGITALOCEAN</h2>
+            <div class="product-list" id="productListVPS">
+                <article class="product">
+                    <h2>VPS DigitalOcean</h2>
+                    <p class="price">15k - 30k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('VPS DigitalOcean', '🧊 RAM 1GB | 1 Core 10.000<br>🧊 RAM 2GB | 1 Core 15.000<br>🧊 RAM 2GB | 2 Core 20.000<br>🧊 RAM 4GB | 2 Core 25.000<br>🧊 RAM 8GB | 4 Core 30.000<br>🧊 RAM 16GB | 4 Core 35.000')">Beli</button>
+                </article>
+            </div>
         </section>
-        <!-- Shopping cart section removed as per user request -->
+
+        <section class="product-group">
+            <h2>Jasa Install</h2>
+            <div class="product-list" id="productListJasaInstall">
+                <article class="product">
+                    <h2>Jasa Install Panel</h2>
+                    <p class="price">5k (termasuk Wings, Node)</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Jasa Install Panel', 'Jasa install panel termasuk Wings dan Node.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Jasa Install Theme</h2>
+                    <p class="price">5k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Jasa Install Theme', 'Jasa install theme.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Pasang Anti DDoS</h2>
+                    <p class="price">5k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Pasang Anti DDoS', 'Layanan pemasangan Anti DDoS.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Panel Bot WhatsApp</h2>
+                    <p class="price">1k - 10k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Panel Bot WhatsApp', 'Panel bot WhatsApp dengan harga bervariasi.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Sewa Bot</h2>
+                    <p class="price">2k/minggu</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Sewa Bot', 'Layanan sewa bot per minggu.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Sewa Bot Permanen</h2>
+                    <p class="price">10k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Sewa Bot Permanen', 'Layanan sewa bot permanen.')">Beli</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-group">
+            <h2>Panel Minecraft & Server</h2>
+            <div class="product-list" id="productListMinecraft">
+                <article class="product">
+                    <h2>Panel Minecraft</h2>
+                    <p class="price">5k - 50k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Panel Minecraft', 'Panel Minecraft dengan harga bervariasi.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Server Siap Pakai</h2>
+                    <p class="price">30k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Server Siap Pakai', 'Server siap pakai dengan harga 30k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Server MC Siap Pakai</h2>
+                    <p class="price">30k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Server MC Siap Pakai', 'Server Minecraft siap pakai dengan harga 30k.')">Beli</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-group">
+            <h2>Nomor & Sosmed</h2>
+            <div class="product-list" id="productListNomorSosmed">
+                <article class="product">
+                    <h2>Nokos WhatsApp</h2>
+                    <p class="price">5k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Nokos WhatsApp', 'Nomor WhatsApp dengan harga 5k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Nokos Telegram</h2>
+                    <p class="price">5k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Nokos Telegram', 'Nomor Telegram dengan harga 5k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Suntik Sosmed</h2>
+                    <p class="price">10k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Suntik Sosmed', 'Layanan suntik sosial media dengan harga 10k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>SC Bot WhatsApp (Ori)</h2>
+                    <p class="price">20k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('SC Bot WhatsApp (Ori)', 'Script bot WhatsApp original dengan harga 20k.')">Beli</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-group">
+            <h2>Logo & Setup Server</h2>
+            <div class="product-list" id="productListLogoSetup">
+                <article class="product">
+                    <h2>Logo Store</h2>
+                    <p class="price">10k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Logo Store', 'Logo store dengan harga 10k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Logo Server</h2>
+                    <p class="price">15k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Logo Server', 'Logo server dengan harga 15k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Setup Server</h2>
+                    <p class="price">2k/setup</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Setup Server', 'Layanan setup server dengan harga 2k per setup.')">Beli</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-group">
+            <h2>Panel & Admin</h2>
+            <div class="product-list" id="productListPanelAdmin">
+                <article class="product">
+                    <h2>Own Jasher 360 CH</h2>
+                    <p class="price">10k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Own Jasher 360 CH', 'Own Jasher 360 CH dengan harga 10k.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Resseler Panel</h2>
+                    <p class="price">5k/permanen</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Resseler Panel', 'Resseler panel dengan harga 5k permanen.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Admin Panel</h2>
+                    <p class="price">8k/permanen</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Admin Panel', 'Admin panel dengan harga 8k permanen.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Owner Panel</h2>
+                    <p class="price">10k/permanen</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Owner Panel', 'Owner panel dengan harga 10k permanen.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>PT Panel</h2>
+                    <p class="price">15k/permanen</p>
+                    <button class="buy-button" onclick="bukaModalProduk('PT Panel', 'PT panel dengan harga 15k permanen.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Murbug</h2>
+                    <p class="price">20k/permanen</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Murbug', 'Murbug dengan harga 20k permanen.')">Beli</button>
+                </article>
+                <article class="product">
+                    <h2>Jasteb</h2>
+                    <p class="price">10k - 5k</p>
+                    <button class="buy-button" onclick="bukaModalProduk('Jasteb', 'Jasteb dengan harga 10k sampai 5k.')">Beli</button>
+                </article>
+            </div>
+        </section>
+
     </main>
     <footer>
-        <p>© 2024 Toko Kami. By AdtyRz.</p>
+        <p>© 2024 Toko Kami. ByAdtyRz.</p>
     </footer>
 
     <!-- Modal Produk -->
     <div id="modalProduk" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="tutupModal()">&times;</span>
-            <h2 id="modalNamaProduk">Nama Produk</h2>
+            <h2 id="modalNamaProduk">ARGZ STORE</h2>
             <p id="modalDeskripsiProduk">Deskripsi produk akan ditampilkan di sini.</p>
             <div class="modal-buttons">
                 <button id="modalBeliButton" class="buy-button">Beli</button>

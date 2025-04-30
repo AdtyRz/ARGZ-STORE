@@ -10,8 +10,10 @@ function bukaModalProduk(namaProduk, deskripsiProduk) {
     const beliButton = document.getElementById('modalBeliButton');
     const whatsappButton = document.getElementById('modalWhatsappButton');
 
-    namaProdukElem.textContent = namaProduk;
-    deskripsiProdukElem.textContent = deskripsiProduk;
+    // Clear description first
+    deskripsiProdukElem.innerHTML = '';
+    // Set description
+    deskripsiProdukElem.innerHTML = deskripsiProduk;
     console.log('Deskripsi produk diatur:', deskripsiProduk);
 
     // Sembunyikan tombol beli di modal
@@ -22,6 +24,12 @@ function bukaModalProduk(namaProduk, deskripsiProduk) {
         const url = `https://wa.me/${nomorWhatsApp}?text=${pesan}`;
         window.open(url, '_blank');
     };
+
+    // Ensure modal content is visible
+    const modalContent = modal.querySelector('.modal-content');
+    if (modalContent) {
+        modalContent.style.display = 'block';
+    }
 
     modal.style.display = 'block';
     console.log('Modal ditampilkan');
